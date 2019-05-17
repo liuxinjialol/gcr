@@ -1,0 +1,21 @@
+docker tag k8s.gcr.io/cluster-proportional-autoscaler-amd64:1.4.0 192.168.56.200:5000/cluster-proportional-autoscaler-amd64:1.4.0;
+docker tag gcr.io/google-containers/kube-proxy:v1.13.5 192.168.56.200:5000/kube-proxy:v1.13.5;
+docker tag gcr.io/google-containers/kube-apiserver:v1.13.5 192.168.56.200:5000/kube-apiserver:v1.13.5;
+docker tag gcr.io/google-containers/kube-controller-manager:v1.13.5 192.168.56.200:5000/kube-controller-manager:v1.13.5;
+docker tag gcr.io/google-containers/kube-scheduler:v1.13.5 192.168.56.200:5000/kube-scheduler:v1.13.5;
+docker tag gcr.io/google_containers/kubernetes-dashboard-amd64:v1.10.1 192.168.56.200:5000/kubernetes-dashboard-amd64:v1.10.1;
+docker tag gcr.io/google_containers/pause-amd64:3.1 192.168.56.200:5000/pause-amd64:3.1;
+docker tag gcr.io/google_containers/pause:3.1 192.168.56.200:5000/pause:3.1;
+docker tag quay.io/coreos/etcd:v3.2.26 192.168.56.200:5000/etcd:v3.2.26;
+
+
+
+docker push 192.168.56.200:5000/cluster-proportional-autoscaler-amd64:1.4.0;
+docker push 192.168.56.200:5000/kube-proxy:v1.13.5;
+docker push 192.168.56.200:5000/kube-apiserver:v1.13.5;
+docker push 192.168.56.200:5000/kube-controller-manager:v1.13.5;
+docker push 192.168.56.200:5000/kube-scheduler:v1.13.5;
+docker push 192.168.56.200:5000/kubernetes-dashboard-amd64:v1.10.1;
+docker push 192.168.56.200:5000/pause-amd64:3.1;
+docker push 192.168.56.200:5000/pause:3.1;
+docker push 192.168.56.200:5000/etcd:v3.2.26;
